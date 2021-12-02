@@ -29,13 +29,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MealsCategoryScreen() {
     val viewMode :MealsCategoryViewModel = viewModel()
+    val meals =viewMode.getMeals()
     Text(text = "Hello Compose!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    MealsAppComposeTheme {
-        MealsCategoryScreen()
-    }
 }
